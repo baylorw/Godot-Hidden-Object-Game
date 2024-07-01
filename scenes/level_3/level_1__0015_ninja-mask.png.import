@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bwilufsvl808e"
+path="res://.godot/imported/level_1__0015_ninja-mask.png-3e1f78e79ff5471fff8e2ef9afca9e73.res"
+
+[deps]
+
+source_file="res://scenes/level_3/level_1__0015_ninja-mask.png"
+dest_files=["res://.godot/imported/level_1__0015_ninja-mask.png-3e1f78e79ff5471fff8e2ef9afca9e73.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

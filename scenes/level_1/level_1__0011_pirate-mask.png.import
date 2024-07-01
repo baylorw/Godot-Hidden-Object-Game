@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cqrq3p8qiy77d"
+path="res://.godot/imported/level_1__0011_pirate-mask.png-94836e099f5ca247059d567b9d2133f4.res"
+
+[deps]
+
+source_file="res://scenes/level_1/level_1__0011_pirate-mask.png"
+dest_files=["res://.godot/imported/level_1__0011_pirate-mask.png-94836e099f5ca247059d567b9d2133f4.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

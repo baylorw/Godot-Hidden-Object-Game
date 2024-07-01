@@ -1,0 +1,188 @@
+[gd_scene load_steps=27 format=3 uid="uid://dtkyid5qn480o"]
+
+[ext_resource type="Script" path="res://scenes/level_1/level_01.gd" id="1_moiht"]
+[ext_resource type="Texture2D" uid="uid://d1nmwe5loicgx" path="res://scenes/level_1/level_1__Background.png" id="2_bth4s"]
+[ext_resource type="Texture2D" uid="uid://bwt5c50x334mn" path="res://scenes/level_1/level_1__0000_sports.png" id="3_vnfc7"]
+[ext_resource type="BitMap" uid="uid://bq8ncjxws1t04" path="res://scenes/level_1/level_1__0001_sports-mask.png" id="5_7c2ab"]
+[ext_resource type="Script" path="res://scenes/hidden_object/hidden_object.gd" id="5_i7exc"]
+[ext_resource type="Texture2D" uid="uid://um181sexvi1u" path="res://scenes/level_1/level_1__0002_liberal-arts-major.png" id="7_ai5yk"]
+[ext_resource type="BitMap" uid="uid://3dtgyh0ycrk1" path="res://scenes/level_1/level_1__0003_liberal-arts-major-mask.png" id="8_3hj5i"]
+[ext_resource type="Texture2D" uid="uid://7okeutvgstlj" path="res://scenes/level_1/level_1__0004_pimp.png" id="9_0nhs4"]
+[ext_resource type="BitMap" uid="uid://c6cihrsnsvk6x" path="res://scenes/level_1/level_1__0005_pimp-mask.png" id="10_pqf5w"]
+[ext_resource type="Texture2D" uid="uid://c43utx8nohgu1" path="res://scenes/level_1/level_1__0006_rich-person.png" id="11_xwt8y"]
+[ext_resource type="BitMap" uid="uid://dedyq4wf6wp3m" path="res://scenes/level_1/level_1__0007_rich-person-mask.png" id="12_baxsn"]
+[ext_resource type="Texture2D" uid="uid://blfajcb0kwhcn" path="res://scenes/level_1/level_1__0012_rapper.png" id="12_x3ho1"]
+[ext_resource type="BitMap" uid="uid://br5rc7680thnc" path="res://scenes/level_1/level_1__0013_rapper-mask.png" id="13_102q0"]
+[ext_resource type="Texture2D" uid="uid://bcyi2ylueahrb" path="res://scenes/level_1/level_1__0008_goth.png" id="13_ovsrt"]
+[ext_resource type="BitMap" uid="uid://ccjcr0peqq5ml" path="res://scenes/level_1/level_1__0009_goth-mask.png" id="14_qv5dn"]
+[ext_resource type="Texture2D" uid="uid://lfwohlgy21kk" path="res://scenes/level_1/level_1__0010_pirate.png" id="15_db6eg"]
+[ext_resource type="BitMap" uid="uid://cqrq3p8qiy77d" path="res://scenes/level_1/level_1__0011_pirate-mask.png" id="16_lw6bm"]
+[ext_resource type="Texture2D" uid="uid://cxpfh0y2hqewt" path="res://scenes/level_1/level_1__0014_ninja.png" id="18_hb4fu"]
+[ext_resource type="BitMap" uid="uid://dkfs2o352flfy" path="res://scenes/level_1/level_1__0015_ninja-mask.png" id="19_unhvs"]
+[ext_resource type="Texture2D" uid="uid://cvkxcjt00wb1x" path="res://scenes/level_1/level_1__0016_emo.png" id="20_13kqx"]
+[ext_resource type="BitMap" uid="uid://b1smvn78dcc2l" path="res://scenes/level_1/level_1__0017_emo-mask.png" id="21_kslmu"]
+[ext_resource type="Texture2D" uid="uid://cdvm3yy0vm7nh" path="res://scenes/level_1/level_1__0018_punk.png" id="22_q13gs"]
+[ext_resource type="BitMap" uid="uid://ugfplp85efw6" path="res://scenes/level_1/level_1__0019_punk-mask.png" id="23_xi5tv"]
+[ext_resource type="Theme" uid="uid://cxpo07c6dp3tp" path="res://themes/main_menu.tres" id="24_nuf42"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_w478y"]
+device = -1
+keycode = 4194305
+
+[sub_resource type="Shortcut" id="Shortcut_esn86"]
+events = [SubResource("InputEventKey_w478y")]
+
+[node name="Level01" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_moiht")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bth4s")
+
+[node name="HiddenObjects" type="Node" parent="."]
+
+[node name="Emo" type="TextureButton" parent="HiddenObjects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("20_13kqx")
+texture_click_mask = ExtResource("21_kslmu")
+script = ExtResource("5_i7exc")
+
+[node name="Goth" type="TextureButton" parent="HiddenObjects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("13_ovsrt")
+texture_click_mask = ExtResource("14_qv5dn")
+script = ExtResource("5_i7exc")
+
+[node name="LiberalArtsMajor" type="TextureButton" parent="HiddenObjects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("7_ai5yk")
+texture_click_mask = ExtResource("8_3hj5i")
+script = ExtResource("5_i7exc")
+
+[node name="Ninja" type="TextureButton" parent="HiddenObjects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("18_hb4fu")
+texture_click_mask = ExtResource("19_unhvs")
+script = ExtResource("5_i7exc")
+
+[node name="Pimp" type="TextureButton" parent="HiddenObjects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("9_0nhs4")
+texture_click_mask = ExtResource("10_pqf5w")
+script = ExtResource("5_i7exc")
+
+[node name="Pirate" type="TextureButton" parent="HiddenObjects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("15_db6eg")
+texture_click_mask = ExtResource("16_lw6bm")
+script = ExtResource("5_i7exc")
+
+[node name="Punk" type="TextureButton" parent="HiddenObjects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("22_q13gs")
+texture_click_mask = ExtResource("23_xi5tv")
+script = ExtResource("5_i7exc")
+
+[node name="Rapper" type="TextureButton" parent="HiddenObjects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("12_x3ho1")
+texture_click_mask = ExtResource("13_102q0")
+script = ExtResource("5_i7exc")
+
+[node name="RichPerson" type="TextureButton" parent="HiddenObjects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("11_xwt8y")
+texture_click_mask = ExtResource("12_baxsn")
+script = ExtResource("5_i7exc")
+
+[node name="Sports" type="TextureButton" parent="HiddenObjects"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_vnfc7")
+texture_click_mask = ExtResource("5_7c2ab")
+stretch_mode = 3
+script = ExtResource("5_i7exc")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -99.0
+offset_top = -71.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("24_nuf42")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="QuitButton" type="Button" parent="MarginContainer"]
+layout_mode = 2
+shortcut = SubResource("Shortcut_esn86")
+text = "< Back"
+
+[connection signal="pressed" from="HiddenObjects/Emo" to="." method="_on_emo_pressed"]
+[connection signal="pressed" from="HiddenObjects/Goth" to="." method="_on_goth_pressed"]
+[connection signal="pressed" from="HiddenObjects/LiberalArtsMajor" to="." method="_on_liberal_arts_major_pressed"]
+[connection signal="pressed" from="HiddenObjects/Ninja" to="." method="_on_ninja_pressed"]
+[connection signal="pressed" from="HiddenObjects/Pimp" to="." method="_on_pimp_pressed"]
+[connection signal="pressed" from="HiddenObjects/Pirate" to="." method="_on_pirate_pressed"]
+[connection signal="pressed" from="HiddenObjects/Punk" to="." method="_on_punk_pressed"]
+[connection signal="pressed" from="HiddenObjects/Rapper" to="." method="_on_rapper_pressed"]
+[connection signal="pressed" from="HiddenObjects/RichPerson" to="." method="_on_rich_person_pressed"]
+[connection signal="pressed" from="HiddenObjects/Sports" to="." method="_on_sports_pressed"]
+[connection signal="pressed" from="MarginContainer/QuitButton" to="." method="_on_quit_button_pressed"]

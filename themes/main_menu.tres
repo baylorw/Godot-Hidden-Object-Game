@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cxpo07c6dp3tp"]
+
+[ext_resource type="StyleBox" uid="uid://c5u8tjttfwnaf" path="res://themes/green_menu_button.tres" id="1_fjxl8"]
+
+[resource]
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 28
+Button/styles/normal = ExtResource("1_fjxl8")

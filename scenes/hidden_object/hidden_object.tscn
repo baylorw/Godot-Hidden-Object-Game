@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc4qmpyd0j7hu"]
+
+[ext_resource type="Script" path="res://scenes/hidden_object/hidden_object.gd" id="1_qbmco"]
+
+[node name="HiddenObject" type="TextureButton"]
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_qbmco")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

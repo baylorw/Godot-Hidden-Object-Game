@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bxgychn5mai2b"
+path="res://.godot/imported/level_1__0009_goth-mask.png-8281fb238366cd4202def10649cf9295.res"
+
+[deps]
+
+source_file="res://scenes/level_3/level_1__0009_goth-mask.png"
+dest_files=["res://.godot/imported/level_1__0009_goth-mask.png-8281fb238366cd4202def10649cf9295.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

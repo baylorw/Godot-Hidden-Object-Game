@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c6cihrsnsvk6x"
+path="res://.godot/imported/level_1__0005_pimp-mask.png-5ee9b0be92251540ca68426f3cbc15ff.res"
+
+[deps]
+
+source_file="res://scenes/level_1/level_1__0005_pimp-mask.png"
+dest_files=["res://.godot/imported/level_1__0005_pimp-mask.png-5ee9b0be92251540ca68426f3cbc15ff.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

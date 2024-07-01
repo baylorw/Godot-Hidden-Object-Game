@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bujllvi01ivw0"
+path="res://.godot/imported/level_1__0017_emo-mask.png-1faac46a5f9ef52c93e54383766ede4d.res"
+
+[deps]
+
+source_file="res://scenes/level_3/level_1__0017_emo-mask.png"
+dest_files=["res://.godot/imported/level_1__0017_emo-mask.png-1faac46a5f9ef52c93e54383766ede4d.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

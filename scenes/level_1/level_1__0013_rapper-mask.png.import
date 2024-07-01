@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://br5rc7680thnc"
+path="res://.godot/imported/level_1__0013_rapper-mask.png-c12d185776c51a732890bda99ce3a533.res"
+
+[deps]
+
+source_file="res://scenes/level_1/level_1__0013_rapper-mask.png"
+dest_files=["res://.godot/imported/level_1__0013_rapper-mask.png-c12d185776c51a732890bda99ce3a533.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://0151kamn66aw"
+path="res://.godot/imported/level_1__0019_punk-mask.png-2bc6a13a59a50c809482fc0fdea63379.res"
+
+[deps]
+
+source_file="res://scenes/level_3/level_1__0019_punk-mask.png"
+dest_files=["res://.godot/imported/level_1__0019_punk-mask.png-2bc6a13a59a50c809482fc0fdea63379.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

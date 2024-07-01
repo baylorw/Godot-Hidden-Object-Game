@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dedyq4wf6wp3m"
+path="res://.godot/imported/level_1__0007_rich-person-mask.png-e6996f4e7e899aaf4cbddf5f9bc554ec.res"
+
+[deps]
+
+source_file="res://scenes/level_1/level_1__0007_rich-person-mask.png"
+dest_files=["res://.godot/imported/level_1__0007_rich-person-mask.png-e6996f4e7e899aaf4cbddf5f9bc554ec.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

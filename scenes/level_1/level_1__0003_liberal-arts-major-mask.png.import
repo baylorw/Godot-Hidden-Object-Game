@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://3dtgyh0ycrk1"
+path="res://.godot/imported/level_1__0003_liberal-arts-major-mask.png-d873453bfc1e073686e7f19d8110b65e.res"
+
+[deps]
+
+source_file="res://scenes/level_1/level_1__0003_liberal-arts-major-mask.png"
+dest_files=["res://.godot/imported/level_1__0003_liberal-arts-major-mask.png-d873453bfc1e073686e7f19d8110b65e.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
