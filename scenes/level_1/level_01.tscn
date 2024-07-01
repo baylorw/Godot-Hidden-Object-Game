@@ -1,6 +1,7 @@
 [gd_scene load_steps=29 format=3 uid="uid://dtkyid5qn480o"]
 
 [ext_resource type="Script" path="res://scenes/level_1/level_01.gd" id="1_moiht"]
+[ext_resource type="Texture2D" uid="uid://q433h6ce4xhc" path="res://scenes/level_1/level_1__0022_Background.png" id="2_m7nwj"]
 [ext_resource type="Texture2D" uid="uid://dp2dk21jvpd6" path="res://scenes/level_1/level_1__0000_sports.png" id="3_vnfc7"]
 [ext_resource type="BitMap" uid="uid://0l8qsuiku7t5" path="res://scenes/level_1/level_1__0001_sports-mask.png" id="5_7c2ab"]
 [ext_resource type="Script" path="res://scenes/hidden_object/hidden_object.gd" id="5_i7exc"]
@@ -24,9 +25,6 @@
 [ext_resource type="BitMap" uid="uid://0151kamn66aw" path="res://scenes/level_1/level_1__0019_punk-mask.png" id="23_xi5tv"]
 [ext_resource type="AudioStream" uid="uid://dgxy0ppuxna56" path="res://audio/jump.wav" id="24_ff6p2"]
 [ext_resource type="Theme" uid="uid://cxpo07c6dp3tp" path="res://themes/main_menu.tres" id="24_nuf42"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vio7x"]
-load_path = "res://.godot/imported/level_1__Background.png-593c5f9521172a79780a6cd347702866.ctex"
 
 [sub_resource type="InputEventKey" id="InputEventKey_w478y"]
 device = -1
@@ -66,7 +64,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("CompressedTexture2D_vio7x")
+texture = ExtResource("2_m7nwj")
 
 [node name="HiddenObjects" type="Node" parent="."]
 
