@@ -1,26 +1,28 @@
 class_name HiddenObject extends TextureButton
 
-#@export var image : Texture2D
-#@export var mask : Texture2D
-#@export var display_name : String
-
-signal discovered(name: String)
+signal discovered(object_name: String)
 
 func _ready():
-	#$TextureButton.texture_normal = image
-	#$TextureButton.texture_click_mask = mask
+	#--- We want it to grow on click but not move so we need to center the pivot point.
 	pivot_offset = Vector2(size.x/2, size.y/2)
-	pass
+	pressed.connect(on_pressed)
 	
-func on_discovered():
+func on_pressed():
+	react_to_being_discovered()
+	
+func react_to_being_discovered():
+	print("we've been discovered. " + name)
 	emit_signal("discovered", name)
-	# TODO: outline
-	# TODO: grow
-	# TODO: fadeout
-	#queue_free()
-	var initial_scale = scale
-	var max_scale = initial_scale + 1
+	self.disabled = true # no more pressing my button!
+
+	#--- Let the user know we've been found.
+	var initial_scale = self.scale
+	var max_scale = initial_scale + Vector2(0.2, 0.2)
 	var tweener = get_tree().create_tween()
-	tweener.tween_property(self, "scale", max_scale, 1.0)
-	tweener.tween_property(self, "scale", initial_scale, 1.0)
-	tweener.tween_property(self, "modulate", Color.GRAY, 1.0)
+	tweener.tween_property(self, "scale", max_scale, .125)
+	tweener.tween_property(self, "scale", initial_scale, 0.125)
+	tweener.tween_property(self, "modulate", Color(0.25, 0.25, 0.25), 0.25)
+	
+	#--- With a real image we'd delete ourselves but my demo has the same image
+	#---	in the background so that won't work. 
+	#queue_free()

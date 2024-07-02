@@ -6,5 +6,3 @@
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_qbmco")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
