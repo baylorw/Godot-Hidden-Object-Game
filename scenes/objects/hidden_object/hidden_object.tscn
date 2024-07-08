@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc4qmpyd0j7hu"]
+
+[ext_resource type="Script" path="res://scenes/objects/hidden_object/hidden_object.gd" id="1_qbmco"]
+
+[node name="HiddenObject" type="TextureButton"]
+offset_right = 5.0
+offset_bottom = 5.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch_mode = 5
+script = ExtResource("1_qbmco")

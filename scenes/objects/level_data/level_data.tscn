@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://7ijtuhydu60u"]
+
+[ext_resource type="Script" path="res://scenes/objects/level_data/level_data.gd" id="1_isak6"]
+[ext_resource type="Texture2D" uid="uid://c7sttspmxggwq" path="res://ui/main_menu_background.jpg" id="2_i5foi"]
+[ext_resource type="Texture2D" uid="uid://cs8nhfb30d2b0" path="res://scenes/levels/school/icons/school_icon_anime.png" id="3_d8n6w"]
+[ext_resource type="Script" path="res://scenes/objects/hidden_object/hidden_object.gd" id="4_n0ccm"]
+
+[node name="LevelData" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_isak6")
+
+[node name="PlayAreaBackground" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 8.0
+offset_right = 720.0
+offset_bottom = 488.0
+texture = ExtResource("2_i5foi")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="HiddenObjects" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = 80.0
+offset_top = 24.0
+offset_right = 720.0
+offset_bottom = 472.0
+
+[node name="Anime" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 173.0
+offset_right = 147.0
+offset_bottom = 209.0
+texture_normal = ExtResource("3_d8n6w")
+script = ExtResource("4_n0ccm")

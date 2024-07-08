@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dp4itgswjtue"]
 
 [ext_resource type="Script" path="res://intro/splash_screen_manager.gd" id="1_amcu4"]
-[ext_resource type="PackedScene" uid="uid://b1sevivxrbf43" path="res://main_menu.tscn" id="2_7agay"]
+[ext_resource type="PackedScene" uid="uid://b1sevivxrbf43" path="res://scenes/menus/main_menu.tscn" id="2_7agay"]
 [ext_resource type="PackedScene" uid="uid://bk3incx5h4pyv" path="res://intro/studio_splash_screen.tscn" id="3_mbtw4"]
 [ext_resource type="PackedScene" uid="uid://bh6ae3dngvaah" path="res://intro/game_splash_screen.tscn" id="4_nxmh7"]
 [ext_resource type="PackedScene" uid="uid://6d8debr05ud6" path="res://intro/godot_splash_screen.tscn" id="5_h8a7v"]
@@ -25,7 +25,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.166374, 0.166374, 0.166374, 1)
 
-[node name="SplashScreenContainer" type="CenterContainer" parent="."]
+[node name="SplashScreenContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

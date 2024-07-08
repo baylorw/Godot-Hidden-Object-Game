@@ -2,7 +2,8 @@ extends Control
 
 @export var next_screen : PackedScene
 
-@onready var _splash_screen_container : CenterContainer = $SplashScreenContainer
+#@onready var _splash_screen_container : CenterContainer = $SplashScreenContainer
+@onready var _splash_screen_container = $SplashScreenContainer
 
 var _splash_screens : Array[SplashScreen]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://6d8debr05ud6"]
 
-[ext_resource type="Script" path="res://intro/game_splash_screen.gd" id="1_qwwtk"]
+[ext_resource type="Script" path="res://intro/splash_screen_child.gd" id="1_qwwtk"]
 [ext_resource type="Texture2D" uid="uid://h708ad08hi44" path="res://intro/godot_splash_screen.png" id="2_45jhv"]
 
 [node name="GodotSplashScreen" type="Control"]

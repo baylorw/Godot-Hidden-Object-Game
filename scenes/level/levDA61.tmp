@@ -1,0 +1,250 @@
+[gd_scene load_steps=17 format=3 uid="uid://4os2q7glje7q"]
+
+[ext_resource type="AudioStream" uid="uid://dgxy0ppuxna56" path="res://audio/jump.wav" id="1_71chc"]
+[ext_resource type="Script" path="res://scenes/objects/level/level.gd" id="1_g4e82"]
+[ext_resource type="Theme" uid="uid://cxpo07c6dp3tp" path="res://themes/main_menu.tres" id="2_dvuxb"]
+[ext_resource type="Texture2D" uid="uid://c7sttspmxggwq" path="res://ui/main_menu_background.jpg" id="3_2obh8"]
+[ext_resource type="Texture2D" uid="uid://bcfup3ms0wvf1" path="res://scenes/levels/school/school_bg.png" id="5_n2m02"]
+[ext_resource type="Texture2D" uid="uid://dvke1r6n1d37s" path="res://shared_art/magnifying glass.png" id="5_nxqcq"]
+[ext_resource type="Texture2D" uid="uid://cs8nhfb30d2b0" path="res://scenes/levels/school/school_icon_anime.png" id="6_valkq"]
+[ext_resource type="Script" path="res://scenes/objects/hidden_object/hidden_object.gd" id="7_kodte"]
+[ext_resource type="Texture2D" uid="uid://qar8nnbmx2mu" path="res://scenes/levels/school/school_icon_art.png" id="8_e8rqy"]
+[ext_resource type="Texture2D" uid="uid://ehcuwm8acfoi" path="res://scenes/levels/school/school_icon_band.png" id="9_g11h1"]
+[ext_resource type="Texture2D" uid="uid://dbcnipgkd6j1x" path="res://scenes/levels/school/school_icon_bathroom-boy.png" id="10_4yw15"]
+[ext_resource type="Texture2D" uid="uid://ddpndjfaf357t" path="res://scenes/levels/school/school_icon_biology.png" id="11_dwlu2"]
+[ext_resource type="Texture2D" uid="uid://ns3r7v7ho47" path="res://scenes/levels/school/school_icon_cafeteria.png" id="12_d0g7g"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_w478y"]
+device = -1
+keycode = 4194305
+
+[sub_resource type="Shortcut" id="Shortcut_nbbvw"]
+events = [SubResource("InputEventKey_w478y")]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ubbwx"]
+bg_color = Color(0.952833, 0.89355, 0.341457, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.952833, 0.89355, 0.341457, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 10
+shadow_offset = Vector2(5, 5)
+
+[node name="Level" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_dvuxb")
+script = ExtResource("1_g4e82")
+
+[node name="prototypes" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabelPrototype" type="RichTextLabel" parent="prototypes"]
+layout_mode = 2
+offset_left = 132.0
+offset_top = 500.0
+offset_right = 160.0
+offset_bottom = 523.0
+bbcode_enabled = true
+text = "RTF
+"
+fit_content = true
+autowrap_mode = 0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_71chc")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_2obh8")
+expand_mode = 1
+
+[node name="PlayAreaBackground" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 80.0
+offset_top = 8.0
+offset_right = 720.0
+offset_bottom = 488.0
+texture = ExtResource("5_n2m02")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="HiddenObjects" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+anchors_preset = 0
+offset_left = 80.0
+offset_top = 24.0
+offset_right = 720.0
+offset_bottom = 472.0
+
+[node name="Anime" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 173.0
+offset_right = 147.0
+offset_bottom = 209.0
+texture_normal = ExtResource("6_valkq")
+script = ExtResource("7_kodte")
+
+[node name="Art" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 385.0
+offset_top = 284.0
+offset_right = 414.0
+offset_bottom = 316.0
+texture_normal = ExtResource("8_e8rqy")
+script = ExtResource("7_kodte")
+
+[node name="Band" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 397.0
+offset_right = 437.0
+offset_bottom = 444.0
+texture_normal = ExtResource("9_g11h1")
+script = ExtResource("7_kodte")
+
+[node name="Boys Bathroom" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 140.0
+offset_right = 247.0
+offset_bottom = 156.0
+texture_normal = ExtResource("10_4yw15")
+script = ExtResource("7_kodte")
+
+[node name="Biology" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 175.0
+offset_right = 466.0
+offset_bottom = 209.0
+texture_normal = ExtResource("11_dwlu2")
+script = ExtResource("7_kodte")
+
+[node name="Cafeteria" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 62.0
+offset_right = 239.0
+offset_bottom = 105.0
+texture_normal = ExtResource("12_d0g7g")
+script = ExtResource("7_kodte")
+
+[node name="Controls" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -100.0
+offset_right = 400.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MagnifyingGlass" type="TextureButton" parent="Controls"]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+disabled = true
+texture_normal = ExtResource("5_nxqcq")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="Controls/VBoxContainer"]
+layout_mode = 2
+
+[node name="ItemsToFindContainer" type="GridContainer" parent="Controls/VBoxContainer/PanelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 20
+columns = 5
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Controls/VBoxContainer/PanelContainer/ItemsToFindContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "RTF
+"
+fit_content = true
+autowrap_mode = 0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Controls/VBoxContainer/PanelContainer/ItemsToFindContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "RTF
+"
+fit_content = true
+autowrap_mode = 0
+
+[node name="ScoreLabel" type="RichTextLabel" parent="Controls/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+bbcode_enabled = true
+text = "Score: 0 / 42"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="HintButton" type="Button" parent="Controls"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+disabled = true
+text = "Hint"
+
+[node name="QuitButton" type="Button" parent="Controls"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+shortcut = SubResource("Shortcut_nbbvw")
+text = "< Back"
+
+[node name="WinLabel" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 191.0
+offset_top = 227.0
+offset_right = 608.0
+offset_bottom = 366.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_dvuxb")
+theme_override_colors/font_color = Color(0, 0.717647, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxFlat_ubbwx")
+text = "You Won!"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Controls/QuitButton" to="." method="_on_quit_button_pressed"]

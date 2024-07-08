@@ -1,0 +1,239 @@
+[gd_scene load_steps=30 format=3 uid="uid://rhec8cdry5ro"]
+
+[ext_resource type="Texture2D" uid="uid://cbxnnpoex3tau" path="res://scenes/levels/paper_doll/paper_doll_bg.png" id="2_3s37w"]
+[ext_resource type="Texture2D" uid="uid://eke84626xjn8" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_akatsuki.png" id="3_1tt1k"]
+[ext_resource type="Script" path="res://scenes/objects/hidden_object/hidden_object.gd" id="4_1biwn"]
+[ext_resource type="Texture2D" uid="uid://c8ift0hoaxpw4" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_ballerina.png" id="5_we661"]
+[ext_resource type="Texture2D" uid="uid://cg1em03qpkvpu" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_catlady_dead.png" id="6_ks7us"]
+[ext_resource type="Texture2D" uid="uid://x4jllv83iceg" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_chaps-shocked.png" id="6_ygc1w"]
+[ext_resource type="Texture2D" uid="uid://ceykkge87m4h6" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_cheerleader-jumping.png" id="7_srrhh"]
+[ext_resource type="Texture2D" uid="uid://bl6trk1js8gs1" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_chefs.png" id="8_7m2jn"]
+[ext_resource type="Texture2D" uid="uid://brjj2kr2f1wcr" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_emo.png" id="9_12un2"]
+[ext_resource type="Texture2D" uid="uid://xii0fbj2yhp2" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_fast_food.png" id="10_bbpyb"]
+[ext_resource type="Texture2D" uid="uid://dnj57km4dwqkf" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_football.png" id="11_x748a"]
+[ext_resource type="Texture2D" uid="uid://bhg8vknaa4ub0" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_goth-unimpressed.png" id="12_hxiu0"]
+[ext_resource type="Texture2D" uid="uid://cxnjd2jesc7gl" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_hero.png" id="13_sstmn"]
+[ext_resource type="Texture2D" uid="uid://r5efke5cgs1x" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_hippy.png" id="14_ae1oh"]
+[ext_resource type="Texture2D" uid="uid://bmu3v2wubbp4d" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_jester.png" id="15_hvh7m"]
+[ext_resource type="Texture2D" uid="uid://h6majw4irphb" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_king.png" id="16_bu4an"]
+[ext_resource type="Texture2D" uid="uid://c3otgnpbq1igc" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_LibrarianUpset.png" id="17_1fi6w"]
+[ext_resource type="Texture2D" uid="uid://dimvsiigs2m3g" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_mc-frontalot.png" id="18_uiypd"]
+[ext_resource type="Texture2D" uid="uid://dxqd6j23aiv7l" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_pimp-shocked.png" id="19_tw51o"]
+[ext_resource type="Texture2D" uid="uid://xbrn4a2s5yfu" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_pirate.png" id="20_dgmps"]
+[ext_resource type="Texture2D" uid="uid://dcktgftd85t8x" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_plumber.png" id="21_28ol7"]
+[ext_resource type="Texture2D" uid="uid://ktsm2saf5gel" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_prom-kiss.png" id="22_x4xux"]
+[ext_resource type="Texture2D" uid="uid://bealveqdj8nid" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_punk.png" id="23_dym2w"]
+[ext_resource type="Texture2D" uid="uid://dgu80mi5iday" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_rich-guy.png" id="24_0qikr"]
+[ext_resource type="Texture2D" uid="uid://ci1dx337vnnra" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_Scotsman.png" id="25_l13hv"]
+[ext_resource type="Texture2D" uid="uid://b4ugfq7wke43v" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_ska-happy.png" id="26_1kmqa"]
+[ext_resource type="Texture2D" uid="uid://df1ja68l7nt4q" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_tiger-and-bunny.png" id="27_o8jhs"]
+[ext_resource type="Texture2D" uid="uid://bcwgjo1qoip6j" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_toga.png" id="28_q7tbw"]
+[ext_resource type="Texture2D" uid="uid://dl4tkm5p14t1n" path="res://scenes/levels/paper_doll/icons/paper_doll_icon_zombie.png" id="29_egw4w"]
+
+[node name="LevelData" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlayAreaBackground" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_3s37w")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HiddenObjects" type="MarginContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Ninja" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("3_1tt1k")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="BDSM" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("6_ygc1w")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Ballerina" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("5_we661")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Cat Girl" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("6_ks7us")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Cheerleader" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("7_srrhh")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Chef" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("8_7m2jn")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Emo" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("9_12un2")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Liberal Arts" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("10_bbpyb")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Football" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("11_x748a")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Goth" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("12_hxiu0")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Hero" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("13_sstmn")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Hippy" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("14_ae1oh")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Jester" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("15_hvh7m")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="King" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("16_bu4an")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Librarian" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("17_1fi6w")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Rapper" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("18_uiypd")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Pimp" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("19_tw51o")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Pirate" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("20_dgmps")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Plumber" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("21_28ol7")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Flirt" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("22_x4xux")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Punk" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("23_dym2w")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Rich Guy" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("24_0qikr")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Scot" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("25_l13hv")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Ska" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("26_1kmqa")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Tiger and Bunny" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("27_o8jhs")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Frat" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("28_q7tbw")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")
+
+[node name="Zombie" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("29_egw4w")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_1biwn")

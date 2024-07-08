@@ -1,0 +1,285 @@
+[gd_scene load_steps=36 format=3 uid="uid://cmfg2mf08y8oj"]
+
+[ext_resource type="Texture2D" uid="uid://bcfup3ms0wvf1" path="res://scenes/levels/school/school_bg.png" id="2_plxy7"]
+[ext_resource type="Texture2D" uid="uid://cd6pdm7kck3c2" path="res://scenes/levels/school/icons/school_icon_anime.png" id="3_erlvu"]
+[ext_resource type="Script" path="res://scenes/objects/hidden_object/hidden_object.gd" id="4_jppm7"]
+[ext_resource type="Texture2D" uid="uid://cymqgpwtpy530" path="res://scenes/levels/school/icons/school_icon_art.png" id="5_21edf"]
+[ext_resource type="Texture2D" uid="uid://63lvy3v5x77c" path="res://scenes/levels/school/icons/school_icon_band.png" id="6_fuj70"]
+[ext_resource type="Texture2D" uid="uid://big1osmjewc3a" path="res://scenes/levels/school/icons/school_icon_bathroom-boy.png" id="7_xxkf6"]
+[ext_resource type="Texture2D" uid="uid://c6wxyjhhpepfd" path="res://scenes/levels/school/icons/school_icon_biology.png" id="8_s3qi3"]
+[ext_resource type="Texture2D" uid="uid://ckgx6ef0rp73v" path="res://scenes/levels/school/icons/school_icon_cafeteria.png" id="9_dayud"]
+[ext_resource type="Texture2D" uid="uid://1yx6mnawc6sg" path="res://scenes/levels/school/icons/school_icon_bathroom-girl.png" id="10_hsw2u"]
+[ext_resource type="Texture2D" uid="uid://cg7na0h7tfy6k" path="res://scenes/levels/school/icons/school_icon_chemistry.png" id="11_mrg3a"]
+[ext_resource type="Texture2D" uid="uid://cl1k5qoynx5pc" path="res://scenes/levels/school/icons/school_icon_choir.png" id="12_j4kjl"]
+[ext_resource type="Texture2D" uid="uid://fu7xj8b8oobu" path="res://scenes/levels/school/icons/school_icon_debate.png" id="13_l5pr0"]
+[ext_resource type="Texture2D" uid="uid://dgg631gfjddsc" path="res://scenes/levels/school/icons/school_icon_drama.png" id="14_h6ahw"]
+[ext_resource type="Texture2D" uid="uid://cv26ueg2mypoh" path="res://scenes/levels/school/icons/school_icon_ffa.png" id="15_5u684"]
+[ext_resource type="Texture2D" uid="uid://d4myvqeqgm8ta" path="res://scenes/levels/school/icons/school_icon_field.png" id="16_4in03"]
+[ext_resource type="Texture2D" uid="uid://b0eewj2gv6o7a" path="res://scenes/levels/school/icons/school_icon_foreign-language.png" id="17_de8hb"]
+[ext_resource type="Texture2D" uid="uid://3dcupwk52ccp" path="res://scenes/levels/school/icons/school_icon_glee.png" id="18_xpnb8"]
+[ext_resource type="Texture2D" uid="uid://qfwpm82pjvv0" path="res://scenes/levels/school/icons/school_icon_graveyard.png" id="19_uh1xh"]
+[ext_resource type="Texture2D" uid="uid://dcihqyyadr4ua" path="res://scenes/levels/school/icons/school_icon_gun-club.png" id="20_e33al"]
+[ext_resource type="Texture2D" uid="uid://crix26ifd3hnt" path="res://scenes/levels/school/icons/school_icon_gym.png" id="21_hknb4"]
+[ext_resource type="Texture2D" uid="uid://76uc2mbp3ruh" path="res://scenes/levels/school/icons/school_icon_health.png" id="22_l27o6"]
+[ext_resource type="Texture2D" uid="uid://oe4akq10rmfw" path="res://scenes/levels/school/icons/school_icon_history.png" id="23_mebrx"]
+[ext_resource type="Texture2D" uid="uid://dsljltodau2r0" path="res://scenes/levels/school/icons/school_icon_home-ec.png" id="24_apmv4"]
+[ext_resource type="Texture2D" uid="uid://8b6q4sopgvvv" path="res://scenes/levels/school/icons/school_icon_honor-society.png" id="25_srrb6"]
+[ext_resource type="Texture2D" uid="uid://2lxsfa0sooih" path="res://scenes/levels/school/icons/school_icon_janitor.png" id="26_6wdar"]
+[ext_resource type="Texture2D" uid="uid://bmwlgrtjoyost" path="res://scenes/levels/school/icons/school_icon_kitchen.png" id="27_46g8a"]
+[ext_resource type="Texture2D" uid="uid://10ptpvrqpypp" path="res://scenes/levels/school/icons/school_icon_library.png" id="28_reyrd"]
+[ext_resource type="Texture2D" uid="uid://dd1jbkpgtqy1b" path="res://scenes/levels/school/icons/school_icon_literature.png" id="29_inu7a"]
+[ext_resource type="Texture2D" uid="uid://h3js16v4ik4s" path="res://scenes/levels/school/icons/school_icon_math.png" id="30_0pu13"]
+[ext_resource type="Texture2D" uid="uid://dgghsfopju1m1" path="res://scenes/levels/school/icons/school_icon_old-ones.png" id="31_uvffk"]
+[ext_resource type="Texture2D" uid="uid://i7253r4dvuq" path="res://scenes/levels/school/icons/school_icon_physics.png" id="32_ibe8d"]
+[ext_resource type="Texture2D" uid="uid://bwnntl2k8uo0i" path="res://scenes/levels/school/icons/school_icon_principal.png" id="33_55ti2"]
+[ext_resource type="Texture2D" uid="uid://ddccxjo0amja6" path="res://scenes/levels/school/icons/school_icon_reception.png" id="34_so62e"]
+[ext_resource type="Texture2D" uid="uid://c8rj2ljven4rw" path="res://scenes/levels/school/icons/school_icon_ROTC.png" id="35_ar11w"]
+[ext_resource type="Texture2D" uid="uid://puvtq4tj45sx" path="res://scenes/levels/school/icons/school_icon_shop.png" id="36_42765"]
+
+[node name="LevelData" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayAreaBackground" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_plxy7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HiddenObjects" type="MarginContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Anime" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("3_erlvu")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Art" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("5_21edf")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Band" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("6_fuj70")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Bio" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("8_s3qi3")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Boys Bathroom" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("7_xxkf6")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Girls Bathroom" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("10_hsw2u")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Cafeteria" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("9_dayud")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Chemistry" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("11_mrg3a")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Choir" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("12_j4kjl")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Debate" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("13_l5pr0")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Drama" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("14_h6ahw")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Farmer" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("15_5u684")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Field" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("16_4in03")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Languages" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("17_de8hb")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Glee" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("18_xpnb8")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Graveyard" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("19_uh1xh")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Gun Club" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("20_e33al")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Gym" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("21_hknb4")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Health" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("22_l27o6")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="History" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("23_mebrx")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Home Ec" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("24_apmv4")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Honor Society" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("25_srrb6")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Custodial" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("26_6wdar")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Library" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("28_reyrd")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Literature" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("29_inu7a")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Math" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("30_0pu13")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Church Club" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("31_uvffk")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Physics" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("32_ibe8d")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="ROTC" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("35_ar11w")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Shop" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("36_42765")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Reception" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("34_so62e")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Kitchen" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("27_46g8a")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")
+
+[node name="Principal" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 2
+texture_normal = ExtResource("33_55ti2")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_jppm7")

@@ -1,0 +1,93 @@
+[gd_scene load_steps=10 format=3 uid="uid://dvoa26age733g"]
+
+[ext_resource type="Script" path="res://scenes/objects/level_data/level_data.gd" id="1_wut0p"]
+[ext_resource type="Texture2D" uid="uid://cbxnnpoex3tau" path="res://scenes/levels/paper_doll/paper_doll_bg.png" id="2_uxtfv"]
+[ext_resource type="Texture2D" uid="uid://cs8nhfb30d2b0" path="res://scenes/levels/school/icons/school_icon_anime.png" id="3_yagnl"]
+[ext_resource type="Script" path="res://scenes/objects/hidden_object/hidden_object.gd" id="4_yeuuf"]
+[ext_resource type="Texture2D" uid="uid://qar8nnbmx2mu" path="res://scenes/levels/school/icons/school_icon_art.png" id="5_3euld"]
+[ext_resource type="Texture2D" uid="uid://ehcuwm8acfoi" path="res://scenes/levels/school/icons/school_icon_band.png" id="6_wf847"]
+[ext_resource type="Texture2D" uid="uid://dbcnipgkd6j1x" path="res://scenes/levels/school/icons/school_icon_bathroom-boy.png" id="7_41lvf"]
+[ext_resource type="Texture2D" uid="uid://ddpndjfaf357t" path="res://scenes/levels/school/icons/school_icon_biology.png" id="8_y22b2"]
+[ext_resource type="Texture2D" uid="uid://ns3r7v7ho47" path="res://scenes/levels/school/icons/school_icon_cafeteria.png" id="9_vwngb"]
+
+[node name="LevelData" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wut0p")
+
+[node name="PlayAreaBackground" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 8.0
+offset_right = 720.0
+offset_bottom = 488.0
+texture = ExtResource("2_uxtfv")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="HiddenObjects" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = 80.0
+offset_top = 24.0
+offset_right = 720.0
+offset_bottom = 472.0
+
+[node name="Anime" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 173.0
+offset_right = 147.0
+offset_bottom = 209.0
+texture_normal = ExtResource("3_yagnl")
+script = ExtResource("4_yeuuf")
+
+[node name="Art" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 385.0
+offset_top = 284.0
+offset_right = 414.0
+offset_bottom = 316.0
+texture_normal = ExtResource("5_3euld")
+script = ExtResource("4_yeuuf")
+
+[node name="Band" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 397.0
+offset_right = 437.0
+offset_bottom = 444.0
+texture_normal = ExtResource("6_wf847")
+script = ExtResource("4_yeuuf")
+
+[node name="Boys Bathroom" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 140.0
+offset_right = 247.0
+offset_bottom = 156.0
+texture_normal = ExtResource("7_41lvf")
+script = ExtResource("4_yeuuf")
+
+[node name="Biology" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 175.0
+offset_right = 466.0
+offset_bottom = 209.0
+texture_normal = ExtResource("8_y22b2")
+script = ExtResource("4_yeuuf")
+
+[node name="Cafeteria" type="TextureButton" parent="HiddenObjects"]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 62.0
+offset_right = 239.0
+offset_bottom = 105.0
+texture_normal = ExtResource("9_vwngb")
+script = ExtResource("4_yeuuf")
